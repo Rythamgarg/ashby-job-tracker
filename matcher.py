@@ -7,9 +7,10 @@ filtered to a minimum threshold.
 
 import json
 import os
-from groq import Groq
+import time
+from groq import Groq, RateLimitError
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "llama-3.1-8b-instant"
 MIN_SCORE = int(os.environ.get("MIN_MATCH_SCORE", "60"))
 
 RESUME_PATH = os.path.join(os.path.dirname(__file__), "resume.txt")
@@ -70,7 +71,11 @@ def filter_relevant_jobs(jobs):
 
     matched = []
     for job in jobs:
-        score, reason = score_job(client, resume_text, job)
+        try:
+            score, reason = score_job(client, resume_text, job)
+        except RateLimitError:
+            print(f"  [warn] Groq rate limit hit, stopping scoring ({len(matched)} matched so far)")
+            break
         job["score"] = score
         job["reason"] = reason
         if score >= MIN_SCORE:
