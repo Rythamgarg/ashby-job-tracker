@@ -1,15 +1,15 @@
 """
 matcher.py
-Scores each new job against your resume using the Claude API.
+Scores each new job against your resume using the Groq API.
 Returns jobs with a 0-100 relevance score and a one-line reason,
 filtered to a minimum threshold.
 """
 
 import json
 import os
-import anthropic
+from groq import Groq
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "llama-3.3-70b-versatile"
 MIN_SCORE = int(os.environ.get("MIN_MATCH_SCORE", "60"))
 
 RESUME_PATH = os.path.join(os.path.dirname(__file__), "resume.txt")
@@ -41,13 +41,13 @@ Score how relevant this job is to the candidate from 0-100, where:
 Respond with ONLY valid JSON, no markdown fences, no preamble:
 {{"score": <int>, "reason": "<one sentence, under 20 words, explaining the score>"}}
 """
-    resp = client.messages.create(
+    resp = client.chat.completions.create(
         model=MODEL,
         max_tokens=200,
         messages=[{"role": "user", "content": prompt}],
     )
-    text = resp.content[0].text.strip()
-    text = text.replace("```json", "").replace("```", "").strip()
+    text = resp.choices[0].message.content.strip()
+    text = text.replace("\`\`\`json", "").replace("\`\`\`", "").strip()
     try:
         result = json.loads(text)
         return int(result.get("score", 0)), result.get("reason", "")
@@ -61,11 +61,11 @@ def filter_relevant_jobs(jobs):
     if not jobs:
         return []
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY environment variable not set.")
+        raise RuntimeError("GROQ_API_KEY environment variable not set.")
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = Groq(api_key=api_key)
     resume_text = load_resume()
 
     matched = []
