@@ -1,0 +1,40 @@
+PROFESSIONAL SUMMARY
+AI Transformation & Deployment Strategist with 4 years at Sprinklr leading enterprise conversational AI, CCaaS, and contact centre transformation for Fortune 500 clients in banking, media, and consumer electronics. Delivered $5M+ in ARR across 20+ engagements, including India's first WhatsApp banking platform (10M+ users) and a 2,500-agent global contact centre rollout that raised CSAT to 4.1. Combines hands-on technical configuration with C-suite value translation; MBA (PGPX), IIM Ahmedabad, Dubai campus, graduating Aug 2026.
+
+SKILLS & EXPERTISE
+AI & Technical: Conversational AI & NLP design, Voice/Chat Agent Architecture, GPT & RAG Workflows, ML Classification & Triage, API/Webhook Integration, Groovy Scripting, Tableau & Analytics
+Deployment & Delivery: Enterprise Discovery & BRDs, Solution Design, Phased Cutovers & Go-Lives, ROI Modelling & Value Realisation, C-Suite Stakeholder Management, Account Expansion
+
+PROFESSIONAL EXPERIENCE
+Sprinklr, India — Senior Implementation Consultant, Oct 2023 – Sep 2025
+- Co-led global contact centre transformation for a Fortune 100 streaming platform, restructuring operations across 2,500+ agents worldwide and lifting CSAT to 4.1 on Sprinklr's largest $1.5M ARR engagement.
+- Architected a GPT and RAG-powered WhatsApp commerce framework for a global automotive brand, generating 15% lead uplift within 2 weeks, built for replication across 4 Latin American markets.
+- Owned solution design across 20+ enterprise engagements on a low-code SaaS platform, achieving 95%+ client satisfaction through structured delivery roadmaps.
+- Grew 4+ enterprise accounts post-launch, surfacing delivery gaps and building business cases for scope expansion that secured $1M+ in incremental ARR across the portfolio.
+- Designed and led onboarding programme for 10+ junior consultants across 3 cohorts, cutting time-to-first-client-project from 6 to 4 weeks.
+
+Sprinklr, India — Implementation Consultant, Apr 2022 – Oct 2023
+- Delivered India's first WhatsApp banking platform for the country's largest private bank, scaling to 10M+ users and cutting cost-per-transaction by 60%.
+- Built ML-driven message triage for a leading social media platform, achieving 87% classification accuracy across 50K+ daily messages and cutting critical response time by 60%.
+- Led legacy CCaaS replacement for a major US hospitality and gaming group, sequencing a phased cutover across voice, chat, email, and SMS for 800+ agents with zero disruption through peak season.
+
+Business Development Associate, Family Trading Business, India, Jan 2021 – Apr 2022
+- Launched a Basmati rice export vertical from scratch, negotiating with 5+ mills and managing 40-ton container logistics across 4 compliant shipments.
+
+PROJECTS & KEY INITIATIVES
+- TruKKer (Dubai, live project): Building an AI-powered email intelligence and response-tracking system with per-sender anomaly scoring for a MENA logistics unicorn.
+- Vayu World (IIMA Ventures): Co-built the venture case for an AI-native gaming studio, validated via customer interviews and value-chain landscaping, with a playable prototype built on agentic AI pipelines for code and assets.
+
+EDUCATION
+MBA (PGPX), Indian Institute of Management, Ahmedabad | Dubai, UAE, 2026
+Bachelor of Engineering, Chemical Engineering (Honors), BITS Pilani | India, 2021
+
+ACHIEVEMENTS
+- Implementation Consultant of the Quarter (Q1 2024), Sprinklr, fast-tracked to Senior Consultant in 1.5 years vs. 2-year average.
+- Founding Member, ConsultX (IIMA Dubai), co-organised STRAITS case competition with 3,000+ participants across 100+ colleges in 20+ countries.
+
+ADDITIONAL INFORMATION
+Certifications: AI Fluency (Anthropic), Agentic AI and AI Agents for Leaders (Vanderbilt, Coursera)
+Languages & Availability: English, Hindi. Dubai-based, available Aug 2026. Open to UAE, India & remote.
+
+TARGET ROLES: Forward Deployed Engineer, AI Implementation Consultant, Solutions Engineer / Solutions Consultant, Customer Engineer, AI Deployment Strategist, Enterprise Solutions Architect (AI/agentic products), Technical Account Manager (AI platforms), Post-sales / delivery roles at AI-native enterprise software companies.
