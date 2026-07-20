@@ -19,7 +19,11 @@ def main():
     matched_jobs = filter_relevant_jobs(new_jobs)
     print(f"{len(matched_jobs)} job(s) passed the relevance threshold.")
 
-    send_digest(matched_jobs)
+    try:
+        send_digest(matched_jobs)
+    except Exception as e:
+        print(f"[warn] Failed to send email: {e}")
+        print("Continuing to mark jobs as seen...")
 
     # Mark ALL fetched jobs (matched or not) as seen so we don't
     # re-score low-relevance postings every day.
