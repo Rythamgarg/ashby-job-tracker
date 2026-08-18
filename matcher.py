@@ -10,7 +10,7 @@ import os
 import time
 from groq import Groq, RateLimitError
 
-MODEL = "llama-3.1-8b-instant"
+MODEL = "openai/gpt-oss-20b"
 MIN_SCORE = int(os.environ.get("MIN_MATCH_SCORE", "60"))
 
 RESUME_PATH = os.path.join(os.path.dirname(__file__), "resume.txt")
