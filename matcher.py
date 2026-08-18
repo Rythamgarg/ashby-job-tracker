@@ -73,8 +73,8 @@ def filter_relevant_jobs(jobs):
     for job in jobs:
         try:
             score, reason = score_job(client, resume_text, job)
-        except RateLimitError:
-            print(f"  [warn] Groq rate limit hit, stopping scoring ({len(matched)} matched so far)")
+        except Exception as e:
+            print(f" [warn] Groq API error: {e}")
             break
         job["score"] = score
         job["reason"] = reason
